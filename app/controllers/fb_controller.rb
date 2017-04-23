@@ -17,8 +17,7 @@ class FbController < ApplicationController
       'You are logged in! <a href="/logout">Logout</a>'
       facebook = Koala::Facebook::API.new(session[:access_token])
       @user = facebook.get_object("me", USER_PROFILE_OPTIONS)
-      @fbphotos= facebook.get_picture(@user['id'])
-      #@fbphotos = facebook.get_connections("me", "/picture")
+      @fbphoto = @user['picture']['data']['url']
     end
   end
 
