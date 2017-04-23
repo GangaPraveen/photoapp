@@ -1,8 +1,8 @@
 # encoding: utf-8
 
 class PictureUploader < CarrierWave::Uploader::Base
-  include CarrierWave::MiniMagick
-  process resize_to_limit: [300, 300]
+  #include CarrierWave::MiniMagick
+  #process resize_to_limit: [300, 300]
   # Include RMagick or MiniMagick support:
   # include CarrierWave::RMagick
   # include CarrierWave::MiniMagick
@@ -34,6 +34,8 @@ class PictureUploader < CarrierWave::Uploader::Base
   # def scale(width, height)
   #   # do something
   # end
+  
+  
 
   # Create different versions of your uploaded files:
   # version :thumb do

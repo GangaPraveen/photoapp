@@ -1,0 +1,14 @@
+<% if current_user %>
+<h3>Welcome: <%= current_user.email %></h3>
+<% if session['access_token'] %>
+<h3>Images from FB will be shown here...</h3>
+<%=  @user %>
+<%=  @fbphotos %>
+<img src=<%=  @fbphotos %>/>
+
+<% else %>
+  <a href="/fblogin">Login</a>
+<% end %>
+<% end %>
+
+

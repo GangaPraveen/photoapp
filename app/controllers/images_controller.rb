@@ -51,6 +51,10 @@ class ImagesController < ApplicationController
       end
     end
   end
+  #random images
+  #def random1
+   # image=@image.random(image_params)
+  
 
   # DELETE /images/1
   # DELETE /images/1.json
