@@ -1,8 +1,8 @@
 # register your app at facebook to get those infos
 # your app id
-APP_ID     = 249736598768934
+APP_ID     = Enter app ID
 # your app secret
-APP_SECRET = 'a70dbd8d3cb52dd0d3dd2d1a694c390e'
+APP_SECRET = 'Enter your key '
 USER_PROFILE_OPTIONS = {
     fields: %w(id first_name last_name hometown email 
                gender birthday picture.width(320))
@@ -10,7 +10,7 @@ USER_PROFILE_OPTIONS = {
 
 class FbController < ApplicationController
 
-  #use Rack::Session::Cookie, secret: 'a70dbd8d3cb52dd0d3dd2d1a694c390e'
+  #use Rack::Session::Cookie, secret: 'a70dbd8d3694c390e'
 
   def fbimages
     if session[:access_token]
